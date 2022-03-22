@@ -11,3 +11,10 @@ rename filebeats.yml_new in /usr/local/etc/beats/ -> filebeats.yml
 
 Optional add menu item by add this to the service section of /cf/conf/config.xml
 filebeat filebeat filebeat 
+
+<service>
+	<name>filebeat</name>
+	<rcfile>filebeat</rcfile>
+	<executable>filebeat</executable>
+	<description><![CDATA[Filebeat service]]></description>
+</service>
