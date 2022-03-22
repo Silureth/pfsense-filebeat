@@ -9,14 +9,14 @@ fi
 
 #Remove current version and config
 echo "Removing filebeat..."
-/usr/sbin/pkg remove -y beats
+/usr/sbin/pkg remove -y beats7
 /bin/rm /usr/local/etc/rc.d/filebeat.sh
 /bin/rm /usr/local/etc/filebeat.yml
 echo " done."
 
 #Install new version
 echo -n "Installing filebeat..."
-/usr/sbin/pkg add -f https://pkg.freebsd.org/FreeBSD:12:amd64/quarterly/All/beats7-7.10.1.txz
+/usr/sbin/pkg add -f https://pkg.freebsd.org/FreeBSD:12:amd64/release_3/All/beats7-7.14.0.txz
 echo " done."
 
 # Make filebeat auto start at boot
