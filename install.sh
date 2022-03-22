@@ -33,7 +33,7 @@ if [ ! -f /etc/rc.conf.local ] || [ $(grep -c filebeat_enable /etc/rc.conf.local
 fi
 
 # Copy config from Github
-/usr/local/bin/curl https://raw.githubusercontent.com/Silureth/pfsense-filebeat/main/filebeat.yml --output /usr/local/etc/filebeat.yml
+/usr/local/bin/curl https://raw.githubusercontent.com/Silureth/pfsense-filebeat/main/filebeat.yml --output /usr/local/etc/beats/filebeat.yml_new
 
 # Start it up:
 echo -n "Starting filebeat service..."
