@@ -14,9 +14,10 @@ filebeat filebeat filebeat
 
  	
 
-><service>
-	<name>filebeat</name>
-	<rcfile>filebeat</rcfile>
-	<executable>filebeat</executable>
-	<description><![CDATA[Filebeat service]]></description>
-</service>
+>
+	<service>
+		<name>filebeat</name>
+		<rcfile>filebeat</rcfile>
+		<executable>filebeat</executable>
+		<description><![CDATA[Filebeat service]]></description>
+	</service>
